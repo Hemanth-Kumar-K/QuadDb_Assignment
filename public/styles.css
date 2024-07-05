@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191d28 !important;
+    color: #b2b2b2;
+    margin: 0;
+    padding: 0;
+    text-align: center !important;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #6bc8c9;
+}
+
+.switch-currency{
+    display: flex;
+    flex-direction: row;
+}
+
+.telgram-button {
+    color: #ffffff;
+    background-color: #3dc6c1 !important;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500 !important;
+    font-family: "Gill Sans", sans-serif;
+    width: 16%;
+}
+
+.dark-mode {
+    background-color: #ffffff!important;
+    color: #191d28 !important;
+    .main{
+        color: #191d28 !important;
+    }
+    tbody tr:nth-child(even), tbody tr:nth-child(odd) {
+        background-color:  transparent;
+    }
+    
+tbody td {
+    padding: 30px;
+    text-align: center;
+    color: #191d28;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+.timer{
+    color: #191d28;
+    border: 2px solid #191d28;
+    border-radius: 20px;
+    padding: 7px;
+}
+    
+}
+
+.timer{
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 7px;
+}
+.positive-change {
+    color: green;
+  }
+  
+  .negative-change {
+    color: red;
+  }
+
+.i {
+    margin-right: 10px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #2e3241 !important;
+    margin: 10px !important;
+    border-width: 0px !important;
+    font-weight: 500 !important;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.best-price span {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.best-tag {
+    color: #808288;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.best-tag-1 {
+    color: #808288;
+    font-size: 16px;
+}
+
+thead {
+    background-color: transparent;
+}
+
+thead th {
+    padding: 10px;
+    color: #808288;
+    font-size: 25px;
+}
+
+tbody tr:nth-child(even), tbody tr:nth-child(odd) {
+    background-color: #2e3241;
+}
+
+
+tbody td {
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.one {
+    color: #5dc7c2;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.two {
+    color: #808288;
+}
+
+.main {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 72px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #191d28;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2e3241;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+@media (max-width: 768px) {
+    .telgram-button {
+      font-size: 14px; /* Adjust font size for tablet */
+    }
+  }
+
+  /* Adjustments for mobile screens */
+  @media (max-width: 576px) {
+    .telgram-button {
+      font-size: 12px; /* Further reduce font size for mobile */
+    }
+    .switch-currency {
+      flex-direction: column; /* Stack dropdowns vertically for mobile */
+      align-items: flex-start; /* Adjust alignment for mobile */
+    }
+    .btn {
+      margin-bottom: 5px; /* Add spacing between buttons on mobile */
+    }
+  }
