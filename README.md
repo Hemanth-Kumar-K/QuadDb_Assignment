@@ -1,4 +1,3 @@
-```markdown
 # Cryptocurrency Trading Data Visualization App
 
 This project is a web application for visualizing cryptocurrency trading data from various platforms.
